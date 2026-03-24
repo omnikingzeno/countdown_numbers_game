@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+
+<HEAD>
+<TITLE>Countdown Numbers Game</TITLE>
+<META name="Description" content="Countdown Numbers Game">
+<META name="keywords" content="Mathematical analysis of one of the World's longest-running TV game shows.">
+<meta property="og:image" content="http://www.datagenetics.com/blog/august32014/ng.jpg"/>
+<!--   Style Sheet -->
+<link rel="stylesheet" type="text/css" href="/DG.CSS" />
+</HEAD>
+
+<body>
+
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1112649215446595";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<style>
+table.st
+{ 
+font-size: 8pt;
+border: 0px solid;
+border-collapse: collapse;
+}
+
+table.st td
+{ 
+
+font-size: 8pt;
+}
+
+</style>
+
+<div id="wrapW">
+<div ID="dgheader">
+<IMG src='/images/toplogo.png' border=0>
+
+<!-- Menu -->
+<TABLE width='800' cellspacing='0'><TR><TD width=100 bgcolor='white' bordercolor='black' align='center'><a href='/index.html' class='l_title'><B>Home</B></a></TD><TD width=100 bordercolor='black' align='center' bgcolor='red'><a href='/blog.html' class='l_title'><font color='white'><B>Blog</B></font></a></TD><TD width=100 bgcolor='white' bordercolor='black' align='center'><a href='/about.html' class='l_title'><B>About Us</B></a></TD><TD width=100 bgcolor='white' bordercolor='black' align='center'><a href='/example.html' class='l_title'><B>Work</B></a></TD><TD width=100 bgcolor='white' bordercolor='black' align='center'><a href='/content.html' class='l_title'><B>Content</B></a></TD><TD width=100 bgcolor='white' bordercolor='black' align='center'><a href='/contact.html' class='l_title'><B>Contact Us</B></a></TD><TD width=200 align=right><div class="fb-save" data-size="small"></div></TD></TR></TABLE>
+</div>
+
+<div id="dgsidebarW">
+<table>
+<tr><td>&nbsp;</td><td></td></tr>
+<tr>
+<td width=30></td>
+<td><font color=darkgray size=1>&nbsp;Advertisement&nbsp;</font></td>
+</tr>
+<tr>
+<td width=30></td>
+<td width=160 align=right>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3216488037305489";
+/* DataGenetics Wider Skyscraper */
+google_ad_slot = "4276766151";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td>
+</tr>
+</table>
+</div>
+
+<div ID="dgmain">
+
+<h1>Countdown Game Show</h1>
+<p class=main>When I was growing up in the UK we had just three TV stations.  These were <b>BBC1</b>, <b>BBC2</b> and <b>ITV</b>.</p>
+
+<table width=800>
+<tr>
+<td width=150 align=left><img src='4.png'></td>
+<td>
+<p class=main>Then, when I was 15, a new station was launched with imaginative name of <b>Channel 4</b>.  The first program to air on this new channel was a game show called <i>Countdown</i>.  Countdown is still shown today and is one of the longest running game shows in the World.  At the time of writing this article, over 5,000 episodes have been broadcast.</p>
+<p class=main>The show was not entirely original in concept, being based on a slightly earlier game shown in France called <i>Des chiffres et des lettres</i> (Numbers and Letters).</p>
+<p class=main>The Countdown game tests contestants' numeracy and word-making skills.  In the ‘letters’ rounds of the game, players have to create the longest word possible from a random selection of letters (a little bit like Scrabble) picked from vowels and consonants.</p>
+</td>
+</tr>
+</table>
+
+<table width=800>
+<tr>
+<td>
+<p class=main>In the ‘numbers’ round of the game, players have to combine six selected numbers (using just the four basic arithmetic operators) to get as close as possible to a randomly generated total.  It’s is the numbers game that I’m going to talk about in this post.</p>
+</td>
+<td width=140 align=right><img src='calc.png'></td>
+</tr>
+</table>
+
+<h2>Numbers Game</h2>
+<img src='title.png'>
+<p class=main>All games require rules, here are the rules for the numbers game of Countdown:</p>
+
+<ul>
+<li><p class=main>Six, face-down, numbered tiles are selected from twenty-four shuffled tiles.</p></li>
+<li><p class=main>The tiles are arranged into two groups: <i>Large Numbers</i> and <i>Small Numbers</i>.</p></li>
+<li><p class=main>There are four numbers in the large set { 25 , 50 , 75 , 100 }</p></li>
+<li><p class=main>There are twenty numbers in the small set, two each of the numbers 1-10</br>
+{ 1 , 1 , 2 , 2 , 3 , 3 , 4 , 4 , 5 , 5 , 6 , 6 , 7 , 7 , 8 , 8 , 9 , 9 , 10 , 10 }
+</p></li>
+<li><p class=main>One contestant selects as many numbers as desired (unseen) from the large set (between none and all four), and the balance are pulled from the small set to make six numbers in total.</p></li>
+<li><p class=main>A random three-digit <i>target</i> number is then chosen by a computer*.</p></li>
+<li><p class=main>The contestants are given 30 seconds to get as close as possible to the chosen target by using just the four basic arithmetic operators +  - &times; &divide;</p></li>
+<li><p class=main>Not all the digits need to be used.</p></li>
+<li><p class=main>Concatenation of the digits is not allowed (You can’t use a “2” and “2” to make “22”).</p></li>
+<li><p class=main>At no intermediate step in the process can the current running total become negative or involve a fraction.</p></li>
+<li><p class=main>Each numbered tile can only be used once in the calculation.</p></li>
+<li><p class=main>10 points are awarded for correctly getting the exact solution.</p></li>
+<li><p class=main>7 points are awarded for getting within 5 of the required solution.</p></li>
+<li><p class=main>5 points are awarded for getting within 10 points of the required solution.</p></li>
+</ul>
+
+<p class=main>*There is some speculation as to whether 100 is a possible target number generated by the computer.  Some say that only numbers range 101-999 are generated (which are the rules in the French variant), and other say that any three digit numbers is possible.  I’m going to assume the latter in my calculations and say that a target of 100 is possible.</p>
+
+<p class=main>From the way the numbers are selected it’s clear that there can never be more than two of the same number.  Also, there can only be one each of the larger numbers.  If all four of the large numbers are taken then it’s assured that { 25 , 50 , 75 , 100 } will occur.</p>
+
+<h3>Example</h3>
+
+<table width=800>
+<tr>
+
+<td>
+<p class=main>Here's an example of the game in action. In this instance, one number was selected from the large set, and the rest from the small set.</p>
+<p class=main><font size=6>{ 50 , 8 , 3 , 7 , 2 , 10 }</font></p>
+<p class=main>The randomly selected target was <b>556</b>.</p>
+</td>
+<td width=300 align=right><img src='ng.png'></td>
+</tr>
+</table>
+
+<p class=main>There are multiple ways to solve this.  The smallest solution requires just four numbers:</p>
+<p class=main><font size=6>(50 &times; 10) + (8 &times; 7) = 556</font></p>
+<p class=main>A example of a more complicated solution is this:</p>
+<p class=main><font size=6>(((50 - 7) &times; 3) + 10) &times; 8) &divide; 2 = 556</font></p>
+
+<h3>Numbers Geek</h3>
+
+<table width=800>
+<tr>
+<td>
+<p class=main>On the show, contestants' declared solutions are confirmed by one of the hosts (who then goes on to reveal a better/alternate solution if one of the contestants does not get an exact solution).  For 26 years, this host role was performed by the talented <a href='http://en.wikipedia.org/wiki/Carol_Vorderman'>Carol Vorderman</a>.</p>
+<p class=main>Being a numbers geek, I wanted to know many things:</p>
+<ul>
+<li><p class=main>Are all problems solvable for a perfect score? Does there exist a three digit number that is not achievable by any combination of digits?  If not, what is the hardest number to achieve?</p></li>
+<li><p class=main>Is there a perfect set of numbers that allows the solving of any target 100-999?</p></li>
+<li><p class=main>What is the best strategy?  Is it better to take 0,1,2,3 or 4 large numbers?</p></li>
+<li><p class=main>What is the ‘simplest’ solution to every problem (If there are multiple ways to solve any particular problem, what is the solution that requires the smallest number of donor numbers)</p></li>
+<li><p class=main>What is the distribution of the solutions?</p></li>
+<li><p class=main>Are there some interesting pieces of trivia found from analysing the problem?</p></li>
+</ul>
+</ul>
+</td>
+<td width=260 align=right><img src='cv0.jpg'><p></p><img src='cv.jpg'></br>
+<font size=1>Carol Vorderman - Countdown Numbers Host</font></br>
+<font size=1>Image: ITV</font></td>
+</tr>
+</table>
+
+<h2>Code</h2>
+<p class=main>This was a fun piece of code to write.  I elected to use a brute-force approach.  I worked out all possible combinations of ways the numbers/symbols could be arranged and, if they gave a valid solution, what that solution was.</p>
+<p class=main>First of all I needed to generate all unique combinations/subsets of numbers from the starting tiles.  There are 13,243 distinct ways of picking the numbers following the rules. Then, for each of these distinct subsets, the number of distinct ways these numbers can be arranged in order was determined.</p>
+<p class=main>For each of these, all combinations of the operators (five in total) of  + - &times; &divide; needed to be inserted between each number.  The most obvious way to process these was to use <a href='http://en.wikipedia.org/wiki/Reverse_Polish_notation'>Reverse Polish Notation</a> to store the calculation (postfix) as opposed to the more traditional (infix).</p>
+<table width=800>
+<tr>
+<td width=430 align=left>
+
+<table width=400 class=blog>
+<thead><th>Infix</th><th>Postfix</th><th>Solution</th></thead>
+<tr align=center><td>10-(7-2)</td><td>10 7 2 - -</td><td>= 5</td></tr>
+<tr align=center><td>(10-7)-2</td><td>10 7 - 2 -</td><td>= 1</td></tr>
+<tr align=center><td>(10&times;4)-2</td><td>10 4 &times; 2 -</td><td>= 38</td></tr>
+<tr align=center><td>10&times;(4-2)</td><td>10 4 2 - &times;</td><td>= 20</td></tr>
+<tr align=center><td>1+(((5&times;(100-5))-9)+10)</td><td>1 5 100 5 - &times; 9 - 10 + +</td><td>= 477</td></tr>
+</table>
+
+</td>
+<td>
+<p class=main>A trap that needs to be avoided is the ordering the operators should be applied.  For example <b>10-(7-2)</b> gives a very different solution to <b>(10-7)-2</b>, just as <b>(10&times;4)-2</b> is very different from <b>10&times;(4-2)</b>.  In RPN notation these distinctions are obvious (See table).</p>
+
+</td>
+</tr>
+</table>
+
+<p class=main>Calculating all possible solutions is easy using RPN by permuting the order operators and operands (within the constraints of a stack, so some combination as not possible; you can't operate on numbers if there are none in the stack!)</p>
+
+<p class=main>An added benefit of using RPN is that, at the end of any operation you can check the stack and that will give you a possible intermediate solution (remember not all numbers need to be used for a valid solution).</p>
+
+<p class=main>As an example of this, in the example on the last line of the table, the first intermediate result is (100-5)=95.  This is not a valid answer, as it is less than a hundred (the lowest possible target).  However the next operation is multiplication by 5.  This gives a result of 475, which is valid.  So, we already have a short (efficient) solution for 475 which is 5&times;(100-5).  We also have an intermediate solution of 466 for the next step (5&times;(100-5))-9 &hellip;</p> 
+
+
+<h3>Optimisations and Gotchas</h3>
+
+<p class=main>There are some obvious optimisations that can be made in the algorithm (plus a couple of things to watch out for):</p>
+<table width=800>
+<tr>
+<td>
+<ul>
+<li><p class=main>There is no benefit in multiply by 1 at any stage.  This just makes a longer solution.</p></li>
+<li><p class=main>Similarly, there is no benefit of dividing by 1 at any stage.</p></li>
+<li><p class=main>If at any time the intermediate solution becomes negative, we can instantly bail on that solution.</p></li>
+<li><p class=main>Similarly if the intermediate solution becomes non-integer.</p></li>
+<li><p class=main>Slightly more subtly, if there is an intermediate calculation where <b>a&divide;b=b</b> then this is redundant because this is just a longer form of using <b>b</b>.</p></li>
+<li><p class=main>Likewise for <b>a-b=b</b>.</p></li>
+<li><p class=main>You need to make sure you catch any potential <i>divide by zero</i> calculation that might happen as you test for possible solutions.</p></li>
+<li><p class=main>It's very tempting to think about using <b>16 bit Integers</b> to store intermediate but this is wrong for a couple of reasons.  The highest possible intermediate accumulator total encountered is 100&times;75&times;50&times;25&times;10&times;10 = 937,500,000.  This would cause an overflow.</p></li>
+<li><p class=main>Notwithstanding the above, the highest intermediate total seen in a valid solution is 99,600 which happens when trying to obtain a total of 996 from the set {3,3,25,50,75,100}.</br></br>The solution for this, <i>and it is a unique solution for this total</i>, is ((((50+3)&times;25)+3)&times;75)&divide;100=996  If this came up on the show, and you'd managed to work this out, I'm sure you'd be proud!</br></br>The most convoluted I've heard about in the history of the show is this one for <a href='http://www.youtube.com/watch?v=6mCgiaAFCu8'>952</a>, followed closely by <a href='https://www.youtube.com/watch?v=sKdM82SELsU'>821</a> (from an Australian version of the show). Pretty impressive!</p></li>
+
+</ul>
+</td>
+<td width=150 align =right><img src='nw.png'></td>
+</tr>
+</table>
+
+<p class=main>I find it easier to interpret infix rather than postfix equations, so I wrote a function to convert these back and insert the appropriate parenthesis after the calculations were over.</p>
+
+
+<p align=center><img src='cog.png'></p>
+
+<h2>Results</h2>
+<table width=800>
+<tr>
+<td width=130 align =left><img src='nw.png'></td>
+<td>
+<ul>
+<li><p class=main>The 13,243 possible combinations that the tiles can be selected can be combined to make 10,871,986 distinct solutions of tiles and target numbers.</p></li>
+<li><p class=main>There is no target number that it is impossible to make, given the correct numbers.</p></li>
+<li><p class=main>Only one set of number {1,1,2,2,3,3} cannot make <i>any</i> target solution (as it’s not possible to make <u>any</u> three digit number from this set of numbers).</br></br>
+If you were unlucky enough to draw these numbers there is nothing you could do.  The hight possible total achievable from these six numbers is 81 = (2+1)&times;(2+1)&times;3&times;3.  Even the lowest target of 100 is more than 10 away from this, so no score is possible.</p></li>
+<li><p class=main>The ‘hardest’ total to make is 947.  Just 9,017 of the 13,243 combinations can make it (68.09%).</p></li>
+<li><p class=main>There are four target numbers that are the ‘easiest’ total to make.  These are: 100, 102, 104 and 108 both of these can be made by 13,240 of the possible 13,243 tile combinations (99.98%).  Of the three solutions missing, one should not be a surprise, we’ve already discussed it, and this is {1,1,2,2,3,3}. Since it’s not possible to make any target number from this set, it has to be missing by definition! Related to this is the set {1,1,2,2,3,4} which can only can one possible total, which is 108 (1+2)&times;((1+2)&times;(3&times;4)). Finally numbers in the set {1,7,7,8,8,9} cannot be combined to make 100.</br></br>
+
+For 102 and 104, the impossible sets are {1,1,2,2,3,3} {1,1,2,2,3,4} {1,1,2,2,3,5}</br></br>
+For 108, the impossible sets are {1,1,2,2,3,3} {1,1,5,5,50,75} {1,1,10,10,50,75}</p></li>
+<li><p class=main>Out of the 13,243 possible combinations, a surprising 1,226 of them can solve <u>any</u> problem from 100-999 inclusive (9.26%).  Below are the first few resutls of a set that can make all 900 possible target numbers.   It is the set {2,7,9,10,25,50}.  The first few solutions are shown below (click link after for complete list):</p></li>
+<//ul>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<table width=1000 class=st>
+<tr>
+</tr>
+<tr>
+<td><b>100</b>&nbsp;=&nbsp;2&times;50</td>
+<td><b>101</b>&nbsp;=&nbsp;(2&times;(7&times;9))-25</td>
+<td><b>102</b>&nbsp;=&nbsp;((2+9)&times;7)+25</td>
+<td><b>103</b>&nbsp;=&nbsp;((2+9)&times;10)-7</td>
+</tr>
+<tr>
+<td><b>104</b>&nbsp;=&nbsp;(2&times;7)+(9&times;10)</td>
+<td><b>105</b>&nbsp;=&nbsp;7&times;(25-10)</td>
+<td><b>106</b>&nbsp;=&nbsp;2&times;((7&times;9)-10)</td>
+<td><b>107</b>&nbsp;=&nbsp;(2&times;50)+7</td>
+</tr>
+<tr>
+<td><b>108</b>&nbsp;=&nbsp;(2+10)&times;9</td>
+<td><b>109</b>&nbsp;=&nbsp;(2&times;50)+9</td>
+<td><b>110</b>&nbsp;=&nbsp;(2+9)&times;10</td>
+<td><b>111</b>&nbsp;=&nbsp;(2&times;(9+50))-7</td>
+</tr>
+<tr>
+<td><b>112</b>&nbsp;=&nbsp;7&times;(25-9)</td>
+<td><b>113</b>&nbsp;=&nbsp;(7&times;9)+50</td>
+<td><b>114</b>&nbsp;=&nbsp;2&times;(7+50)</td>
+<td><b>115</b>&nbsp;=&nbsp;(9&times;10)+25</td>
+</tr>
+<tr>
+<td><b>116</b>&nbsp;=&nbsp;(2&times;(7&times;9))-10</td>
+<td><b>117</b>&nbsp;=&nbsp;((2+9)&times;10)+7</td>
+<td><b>118</b>&nbsp;=&nbsp;2&times;(9+50)</td>
+<td><b>119</b>&nbsp;=&nbsp;7&times;((9-2)+10)</td>
+</tr>
+<tr>
+<td><b>120</b>&nbsp;=&nbsp;2&times;(10+50)</td>
+<td><b>121</b>&nbsp;=&nbsp;(2&times;((7&times;9)+10))-25</td>
+<td><b>122</b>&nbsp;=&nbsp;2&times;((7&times;10)-9)</td>
+<td><b>123</b>&nbsp;=&nbsp;(2&times;(7+50))+9</td>
+</tr>
+<tr>
+<td><b>124</b>&nbsp;=&nbsp;(2&times;(7+50))+10</td>
+<td><b>125</b>&nbsp;=&nbsp;(7-2)&times;25</td>
+<td><b>126</b>&nbsp;=&nbsp;2&times;(7&times;9)</td>
+<td><b>127</b>&nbsp;=&nbsp;((2+9)&times;7)+50</td>
+</tr>
+<tr>
+<td><b>128</b>&nbsp;=&nbsp;(7+9)&times;(10-2)</td>
+<td><b>129</b>&nbsp;=&nbsp;(2&times;(10+50))+9</td>
+<td><b>130</b>&nbsp;=&nbsp;2&times;((9&times;10)-25)</td>
+<td><b>131</b>&nbsp;=&nbsp;((2+7)&times;9)+50</td>
+</tr>
+<tr>
+<td><b>132</b>&nbsp;=&nbsp;2&times;(7+(9+50))</td>
+<td><b>133</b>&nbsp;=&nbsp;7&times;(9+10)</td>
+<td><b>134</b>&nbsp;=&nbsp;((7-2)&times;25)+9</td>
+<td><b>135</b>&nbsp;=&nbsp;9&times;(25-10)</td>
+</tr>
+<tr>
+<td><b>136</b>&nbsp;=&nbsp;(2&times;(7&times;9))+10</td>
+<td><b>137</b>&nbsp;=&nbsp;2+(9&times;(25-10))</td>
+<td><b>138</b>&nbsp;=&nbsp;2&times;(9+(10+50))</td>
+<td><b>139</b>&nbsp;=&nbsp;(2&times;(7+50))+25</td>
+</tr>
+<tr>
+<td><b>140</b>&nbsp;=&nbsp;2&times;(7&times;10)</td>
+<td><b>141</b>&nbsp;=&nbsp;(2&times;(25+50))-9</td>
+<td><b>142</b>&nbsp;=&nbsp;2+((9&times;10)+50)</td>
+<td><b>143</b>&nbsp;=&nbsp;(2&times;(9+50))+25</td>
+</tr>
+<tr>
+<td><b>144</b>&nbsp;=&nbsp;(2+7)&times;(25-9)</td>
+<td><b>145</b>&nbsp;=&nbsp;(2&times;(10+50))+25</td>
+<td><b>146</b>&nbsp;=&nbsp;2&times;((7&times;9)+10)</td>
+<td><b>147</b>&nbsp;=&nbsp;(2+(9+10))&times;7</td>
+</tr>
+<tr>
+<td><b>148</b>&nbsp;=&nbsp;((10-7)&times;50)-2</td>
+<td><b>149</b>&nbsp;=&nbsp;(2&times;(7&times;10))+9</td>
+<td><b>150</b>&nbsp;=&nbsp;2&times;(25+50)</td>
+<td><b>151</b>&nbsp;=&nbsp;(2&times;(7&times;9))+25</td>
+</tr>
+<tr>
+<td><b>152</b>&nbsp;=&nbsp;(7&times;(25-2))-9</td>
+<td><b>153</b>&nbsp;=&nbsp;(7+10)&times;9</td>
+<td><b>154</b>&nbsp;=&nbsp;(2&times;7)+((9&times;10)+50)</td>
+<td><b>155</b>&nbsp;=&nbsp;2+((7+10)&times;9)</td>
+</tr>
+<tr>
+<td><b>156</b>&nbsp;=&nbsp;(2+50)&times;(10-7)</td>
+<td><b>157</b>&nbsp;=&nbsp;(7&times;25)-(2&times;9)</td>
+<td><b>158</b>&nbsp;=&nbsp;2&times;((7&times;10)+9)</td>
+<td><b>159</b>&nbsp;=&nbsp;(2&times;(25+50))+9</td>
+</tr>
+<tr>
+<td><b>160</b>&nbsp;=&nbsp;(7+9)&times;10</td>
+<td><b>161</b>&nbsp;=&nbsp;7&times;(25-2)</td>
+<td><b>162</b>&nbsp;=&nbsp;9&times;(25-7)</td>
+<td><b>163</b>&nbsp;=&nbsp;(2&times;50)+(7&times;9)</td>
+</tr>
+<tr>
+<td><b>164</b>&nbsp;=&nbsp;2+(9&times;(25-7))</td>
+<td><b>165</b>&nbsp;=&nbsp;(7&times;25)-10</td>
+<td><b>166</b>&nbsp;=&nbsp;(7&times;25)-9</td>
+<td><b>167</b>&nbsp;=&nbsp;2+((7&times;25)-10)</td>
+</tr>
+<tr>
+<td><b>168</b>&nbsp;=&nbsp;2+((7&times;25)-9)</td>
+<td><b>169</b>&nbsp;=&nbsp;(2&times;(7+(9&times;10)))-25</td>
+<td><b>170</b>&nbsp;=&nbsp;(7-2)&times;(9+25)</td>
+<td><b>171</b>&nbsp;=&nbsp;(2+7)&times;(9+10)</td>
+</tr>
+<tr>
+<td><b>172</b>&nbsp;=&nbsp;(9&times;(25-7))+10</td>
+<td><b>173</b>&nbsp;=&nbsp;(7&times;25)-2</td>
+<td><b>174</b>&nbsp;=&nbsp;((7&times;25)+9)-10</td>
+<td><b>175</b>&nbsp;=&nbsp;7&times;25</td>
+</tr>
+<tr>
+<td><b>176</b>&nbsp;=&nbsp;2&times;((7&times;9)+25)</td>
+<td><b>177</b>&nbsp;=&nbsp;2+(7&times;25)</td>
+<td><b>178</b>&nbsp;=&nbsp;((7+10)&times;9)+25</td>
+<td><b>179</b>&nbsp;=&nbsp;((2+25)&times;7)-10</td>
+</tr>
+<tr>
+<td><b>180</b>&nbsp;=&nbsp;2&times;(9&times;10)</td>
+<td><b>181</b>&nbsp;=&nbsp;((2&times;(7&times;10))-9)+50</td>
+<td><b>182</b>&nbsp;=&nbsp;7+((9-2)&times;25)</td>
+<td><b>183</b>&nbsp;=&nbsp;(7&times;(9+10))+50</td>
+</tr>
+<tr>
+<td><b>184</b>&nbsp;=&nbsp;(7&times;25)+9</td>
+<td><b>185</b>&nbsp;=&nbsp;(7&times;25)+10</td>
+<td><b>186</b>&nbsp;=&nbsp;2+((7&times;25)+9)</td>
+<td><b>187</b>&nbsp;=&nbsp;(2+9)&times;(7+10)</td>
+</tr>
+<tr>
+<td><b>188</b>&nbsp;=&nbsp;(7&times;(9+25))-50</td>
+<td><b>189</b>&nbsp;=&nbsp;(2+25)&times;7</td>
+<td><b>190</b>&nbsp;=&nbsp;2&times;((7&times;10)+25)</td>
+<td><b>191</b>&nbsp;=&nbsp;((10-2)&times;25)-9</td>
+</tr>
+<tr>
+<td><b>192</b>&nbsp;=&nbsp;(2+10)&times;(7+9)</td>
+<td><b>193</b>&nbsp;=&nbsp;(2&times;9)+(7&times;25)</td>
+<td><b>194</b>&nbsp;=&nbsp;2&times;(7+(9&times;10))</td>
+<td><b>195</b>&nbsp;=&nbsp;(2&times;10)+(7&times;25)</td>
+</tr>
+<tr>
+<td><b>196</b>&nbsp;=&nbsp;((2&times;9)+10)&times;7</td>
+<td><b>197</b>&nbsp;=&nbsp;(9&times;(25-2))-10</td>
+<td><b>198</b>&nbsp;=&nbsp;(2+9)&times;(25-7)</td>
+<td><b>199</b>&nbsp;=&nbsp;((2+25)&times;7)+10</td>
+</tr>
+<tr>
+<td colspan=4 ><p class=main>You can view the <a href="example.html" onclick="return popitup('example.html')">entire results</a> here. <i>(Link opens in a new window)</i>.</br>
+<p class=main>Here is a list of all the sets, like {2,7,9,10,25,50} that can make <a href="golden.html" onclick="return popitup('golden.html')">every single target number from 100-999</a> <i>(Link opens in a new window)</i>.</p></td>
+</tr>
+</table>
+
+<hr>
+
+<table width=800>
+<tr>
+<td width=200 align=left>
+
+<table class=blog width=180>
+<thead><th># Big</th><th>Count</th></thead>
+<tr align=center><td>0</td><td>5</td></tr>
+<tr align=center><td>1</td><td>614</td></tr>
+<tr align=center><td>2</td><td>603</td></tr>
+<tr align=center><td>3</td><td>4</td></tr>
+</table>
+
+</td>
+<td>
+<p class=main>Of the 1,226 perfect solution sets (sets of numbers that can solve any problem), only five of them contain no large number (for the shortest solution).  There is no perfect number set that contains all four large numbers.  If you select just one large number, you marginally increase your chances of getting a set of numbers that can solve any problem (<i>cf.</i> selecting two large numbers).</p>
+<p class=main>The table on the left shows the distribution of large number counts in all the perfect solutions (for the shortest possible solution).</p>
+</td>
+</tr>
+</table>
+
+<p class=main>Pivoting this data the other way, the percentage of problems that are solvable changes with the target number.  As the target number gets larger, the percentage of times a random selection of tiles will be able to solve gets smaller.  (This is not a surprise.  As the target gets larger, it's more likely that the multiplication operator is used more.  This will leave gaps in between targets that are not reachable).</p>
+<img src='g0.png'>
+<p class=main>All totals below 316 are solvable by &gt;95% of all possible sets.</p>
+
+<h2>Trivia</h2>
+<p class=main>Other misc pieces of trivia:</p>
+
+<ul>
+<li><p class=main>The total of 100 is the only total that can be made with one number! (Obviously only if you have the 100 tile).</p></li>
+<li><p class=main>870 totals are impossible to make without using three or more numbers (whatever numbers are selected).</p></li>
+<li><p class=main>288 totals are impossible to make without using four or more numbers (whatever numbers are selected).</p></li>
+<li><p class=main>There are no sets of numbers that allow for all solutions using just five of the numbers.  At least six are needed to be sure of being able to solve any problem.</p></li>
+<li><p class=main>The most 'complicated' total to make is 961. Of the 13,243 possible sets, 5,548 require all six numbers even for their simplest solutions.</p></li>
+<li><p class=main>The worst tile to draw is a 1. The lowest percentage of solutions occurs when this is in the set.</p></li>
+<li><p class=main>Out of the 1,226 perfect solution sets, the one with the highest <i>weight</i> (greatest sum) is {2,8,9,50,75,100}, the set with the lowest <i>weight</i> is {2,5,7,8,9,10}.  There is only one perfect set with no number less than 8, and that is {8,9,9,10,25,75}.</p></li>
+</ul>
+
+
+
+<h2>Try it out yourself</h2>
+<table width=800>
+<tr>
+<td width=300 align=left><img src='cd.png'></td>
+<td>
+<p align=center><font size=5>
+Try your hand at solving Countdown numbers problems.  If you want to find out solutions, I've put a <a href='http://www.datagenetics.com/blog/august42014/index.html'>solver</a> online.
+</font>
+</p>
+</td>
+</tr>
+</table>
+
+<p class=main>The solver allows you to input the selected tiles (in any order), the requested target, and gives the simplest (smallest number of numbers used) solution to the target number (if an exact solution is possible).  If no exact solution is possible the three nearest solutions are given.  Have fun!</p>
+
+<p class=main>&nbsp;</p>
+
+<fb:like send="true" width="450" show_faces="true" colorscheme="dark" font="arial"></fb:like>
+
+<iframe src="https://DataGenetics.com/feed/foot.php" width=840 height=400 style="border:none" scrolling="no" seamless></iframe>
+
+<p class=main>You can find a complete list of all the articles <a href='/blog.html'>here</a>.<sup><img src='/images/n.gif'></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click <a href='https://DataGenetics.com/newsletter/subscribe.html'>here</a> to receive email alerts on new articles.</p>
+<p class=main><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="DataGenetics" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script></p>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-435375-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,copyhistory=no,scrollbars=yes,height=600,width=1000');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+</div>
+<div id="dgfooter">
+<img src='/images/backgroundwb.jpg'>
+<p>&copy; 2009-2014 DataGenetics&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.datagenetics.com/privacy.html'>Privacy Policy</a></p>
+</div>
+</div>
+</body>
+</html>

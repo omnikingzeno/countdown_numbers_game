@@ -1,0 +1,91 @@
+{
+  "benchmark": "countdown-engine-compare",
+  "generated_at_utc": "2026-03-18T09:59:27.397516+00:00",
+  "workload": "generated",
+  "seed": 20260318,
+  "number_count": 6,
+  "cases": 200,
+  "repeats": 5,
+  "warmup_rounds": 1,
+  "reports": {
+    "countdown_engine": {
+      "benchmark": "countdown-solver",
+      "engine_module": "countdown_engine",
+      "number_count": 6,
+      "generated_at_utc": "2026-03-18T09:59:22.109549+00:00",
+      "python_version": "3.13.5",
+      "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+      "solver_module": "countdown_engine.solve",
+      "workload": "generated",
+      "seed": 20260318,
+      "cases": 200,
+      "repeats": 5,
+      "warmup_rounds": 1,
+      "total_measured_solves": 1000,
+      "per_repeat_seconds": [
+        0.9651806249748915,
+        0.9619909999892116,
+        0.9714199589798227,
+        0.9793985420255922,
+        0.9647507079644129
+      ],
+      "summary": {
+        "repeat_total_seconds_mean": 0.9685481667867861,
+        "repeat_total_seconds_median": 0.9651806249748915,
+        "repeat_total_seconds_p95": 0.9778028254164383,
+        "repeat_total_seconds_min": 0.9619909999892116,
+        "repeat_total_seconds_max": 0.9793985420255922,
+        "repeat_total_seconds_stdev": 0.006977379540281837,
+        "per_solve_ms_mean": 4.842740833933932,
+        "per_solve_ms_median": 4.825903124874458,
+        "per_solve_ms_p95": 4.889014127082191,
+        "per_solve_ms_min": 4.809954999946058,
+        "per_solve_ms_max": 4.896992710127961,
+        "per_solve_ms_stdev": 0.03488689770140912
+      }
+    },
+    "countdown_engine_optimized": {
+      "benchmark": "countdown-solver",
+      "engine_module": "countdown_engine_optimized",
+      "number_count": 6,
+      "generated_at_utc": "2026-03-18T09:59:27.397421+00:00",
+      "python_version": "3.13.5",
+      "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+      "solver_module": "countdown_engine_optimized.solve",
+      "workload": "generated",
+      "seed": 20260318,
+      "cases": 200,
+      "repeats": 5,
+      "warmup_rounds": 1,
+      "total_measured_solves": 1000,
+      "per_repeat_seconds": [
+        0.21533512498717755,
+        0.20730004203505814,
+        0.2062037920113653,
+        0.2025585409719497,
+        0.20144883304601535
+      ],
+      "summary": {
+        "repeat_total_seconds_mean": 0.20656926661031322,
+        "repeat_total_seconds_median": 0.2062037920113653,
+        "repeat_total_seconds_p95": 0.21372810839675366,
+        "repeat_total_seconds_min": 0.20144883304601535,
+        "repeat_total_seconds_max": 0.21533512498717755,
+        "repeat_total_seconds_stdev": 0.005472947960645718,
+        "per_solve_ms_mean": 1.032846333051566,
+        "per_solve_ms_median": 1.0310189600568265,
+        "per_solve_ms_p95": 1.0686405419837683,
+        "per_solve_ms_min": 1.0072441652300768,
+        "per_solve_ms_max": 1.0766756249358878,
+        "per_solve_ms_stdev": 0.027364739803228594
+      }
+    }
+  },
+  "comparison": {
+    "base_per_solve_ms_mean": 4.842740833933932,
+    "optimized_per_solve_ms_mean": 1.032846333051566,
+    "delta_per_solve_ms_mean": 3.8098945008823657,
+    "speedup_factor": 4.688733143512214,
+    "percent_improvement": 78.67227736379715
+  }
+}
